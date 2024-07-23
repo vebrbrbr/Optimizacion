@@ -5,12 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/webpageMulti-Language.css">
 
     <title>Optimizacion</title>
   </head>
@@ -23,7 +21,6 @@
           <img src="img/favicon.png" alt="favicon" class="navL-img" />
           Online
         </a>
-
         <div class="navM" id="nav-menu">
           <ul class="navList">
             <li class="navItem">
@@ -38,13 +35,15 @@
             <li class="navItem">
               <a href="#soporte" class="navLink"> Soporte </a>
             </li>
-          </ul>
-
-          <div class="navclose" id="nav-close">
-            <i class="bx bx-x"></i>
+            <div>
+              <label for="language-select">Idioma: </label>
+              <select id="language-select">
+                  <option value="es">Español</option>
+                  <option value="en">Inglés</option>
+                  <option value="fr">Francés</option>
+              </select>
           </div>
-        </div>
-
+          </ul>
         <div class="navToggle" id="nav-toggle">
           <i class="bx bx-grid-alt"></i>
         </div>
