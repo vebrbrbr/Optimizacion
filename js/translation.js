@@ -1,24 +1,147 @@
 const translations = {
     es: {
-        title: "Bienvenido a Mi Tienda",
-        support: "Soporte",
-        description: "Descripción del producto"
+        "nav-home": "Inicio",
+        "nav-discount": "Descuento",
+        "nav-new": "Producto",
+        "nav-supporte": "Soporte",
+        "nav-language-label": "Idioma: ",
+        "home-title": "Optimizacion <br />Super <br />Barato!!",
+        "home-description": "Buenas gracias por visitar la pagina abajo veras los diferentes precios de los optimizadores!",
+        "home-product": "Producto",
+        "home-supporte": "Soporte",
+        "category-title": "Informacion <br />",
+        "category-exaggerated": "Exagerado",
+        "category-exaggerated-description": "Archivo que va a tener optimizacion de todo menos de la bios y wifi",
+        "category-normal": "Normal",
+        "category-normal-description": "Archivo que va a tener optimizacion de todo menos de la bios ping y programas",
+        "category-cheated": "Chetado",
+        "category-cheated-description": "Archivo que va a tener optimizacion de todo menos de la bios archivos y programas",
+        "product-title": "Descuento",
+        "discount-title": "20% Descuento <br />Productos",
+        "discount-go": "Vamos",
+        "new-title": "Producto",
+        "new-tag": "Nuevo",
+        "new-title-normal": "Locura",
+        "new-subtitle-normal": "Normal",
+        "new-title-cheated": "Locura",
+        "new-subtitle-cheated": "Chetado",
+        "new-title-exaggerated": "Locura",
+        "new-subtitle-exaggerated": "Exagerado",
+        "footer-surprise": "Sorpresa",
+        "footer-description": "Si has llegado hasta aqui eres un crack y si compras un producto lo eres mas.",
+        "footer-discord-title": "Discord",
+        "footer-discord-link": "Danielito#5051",
+        "footer-discord-description1": "Cuando me agreges mandame una foto de la compra y yo te dare el pack",
+        "footer-discord-description2": "Aparte me puedes preguntar dudas o mas info",
+        "footer-about-title": "Sobre nosotros",
+        "footer-about-youtuber": "Youtuber",
+        "footer-about-student": "Estudiante",
+        "footer-about-passion": "Fascinado por la informatica",
+        "footer-payment-title": "Metodos de pago",
+        "footer-payment-paypal": "Paypal",
+        "footer-copy": "Hecho por Caro"
     },
     en: {
-        title: "Welcome to My Store",
-        support: "Support",
-        description: "Product Description"
+        "nav-home": "Home",
+        "nav-discount": "Discount",
+        "nav-new": "Product",
+        "nav-supporte": "Support",
+        "nav-language-label": "Language: ",
+        "home-title": "Optimization <br />Super <br />Cheap!!",
+        "home-description": "Thank you for visiting the page. Below you will see the different prices of the optimizers!",
+        "home-product": "Product",
+        "home-supporte": "Support",
+        "category-title": "Information <br />",
+        "category-exaggerated": "Exaggerated",
+        "category-exaggerated-description": "File that will have optimization for everything except the BIOS and WiFi",
+        "category-normal": "Normal",
+        "category-normal-description": "File that will have optimization for everything except the BIOS, ping, and programs",
+        "category-cheated": "Cheated",
+        "category-cheated-description": "File that will have optimization for everything except the BIOS, files, and programs",
+        "product-title": "Discount",
+        "discount-title": "20% Discount <br />Products",
+        "discount-go": "Let's go",
+        "new-title": "Product",
+        "new-tag": "New",
+        "new-title-normal": "Madness",
+        "new-subtitle-normal": "Normal",
+        "new-title-cheated": "Madness",
+        "new-subtitle-cheated": "Cheated",
+        "new-title-exaggerated": "Madness",
+        "new-subtitle-exaggerated": "Exaggerated",
+        "footer-surprise": "Surprise",
+        "footer-description": "If you've made it this far, you're awesome, and if you buy a product, you're even more awesome.",
+        "footer-discord-title": "Discord",
+        "footer-discord-link": "Danielito#5051",
+        "footer-discord-description1": "When you add me, send me a photo of the purchase and I will give you the pack",
+        "footer-discord-description2": "You can also ask me questions or get more info",
+        "footer-about-title": "About us",
+        "footer-about-youtuber": "YouTuber",
+        "footer-about-student": "Student",
+        "footer-about-passion": "Fascinated by computing",
+        "footer-payment-title": "Payment methods",
+        "footer-payment-paypal": "Paypal",
+        "footer-copy": "Made by Caro"
     },
     fr: {
-        title: "Bienvenue dans Ma Boutique",
-        support: "Support",
-        description: "Description du produit"
+        "nav-home": "Accueil",
+        "nav-discount": "Rabais",
+        "nav-new": "Produit",
+        "nav-supporte": "Soutien",
+        "nav-language-label": "Langue: ",
+        "home-title": "Optimisation <br />Super <br />Pas Cher!!",
+        "home-description": "Merci de visiter la page. Ci-dessous, vous verrez les différents prix des optimiseurs!",
+        "home-product": "Produit",
+        "home-supporte": "Soutien",
+        "category-title": "information <br />",
+        "category-exaggerated": "Exagéré",
+        "category-exaggerated-description": "Fichier qui aura une optimisation pour tout sauf le BIOS et le WiFi",
+        "category-normal": "Normal",
+        "category-normal-description": "Fichier qui aura une optimisation pour tout sauf le BIOS, le ping et les programmes",
+        "category-cheated": "Truqué",
+        "category-cheated-description": "Fichier qui aura une optimisation pour tout sauf le BIOS, les fichiers et les programmes",
+        "product-title": "Rabais",
+        "discount-title": "20% Rabais <br />Produits",
+        "discount-go": "Allons-y",
+        "new-title": "Produit",
+        "new-tag": "Nouveau",
+        "new-title-normal": "Folie",
+        "new-subtitle-normal": "Normal",
+        "new-title-cheated": "Folie",
+        "new-subtitle-cheated": "Truqué",
+        "new-title-exaggerated": "Folie",
+        "new-subtitle-exaggerated": "Exagéré",
+        "footer-surprise": "Surprendre",
+        "footer-description": "Si vous êtes arrivé jusqu'ici, vous êtes génial et si vous achetez un produit, vous êtes encore plus génial.",
+        "footer-discord-title": "Discord",
+        "footer-discord-link": "Danielito#5051",
+        "footer-discord-description1": "Lorsque vous m'ajoutez, envoyez-moi une photo de l'achat et je vous donnerai le pack",
+        "footer-discord-description2": "Vous pouvez également me poser des questions ou obtenir plus d'informations",
+        "footer-about-title": "À propos de nous",
+        "footer-about-youtuber": "YouTuber",
+        "footer-about-student": "Étudiant",
+        "footer-about-passion": "Passionné par l'informatique",
+        "footer-payment-title": "Méthodes de paiement",
+        "footer-payment-paypal": "Paypal",
+        "footer-copy": "Fait par Caro"
     }
 };
 
 function changeLanguage() {
-    const language = document.getElementById("language-select").value;
-    document.getElementById("title").textContent = translations[language].title;
-    document.getElementById("support").textContent = translations[language].support;
-    document.getElementById("description").textContent = translations[language].description;
+    const languageSelect = document.getElementById("language-select");
+    const selectedLanguage = languageSelect.value;
+    const elements = document.querySelectorAll("[id]");
+
+    elements.forEach((element) => {
+        const translationKey = element.id;
+        if (translations[selectedLanguage][translationKey]) {
+            element.innerHTML = translations[selectedLanguage][translationKey];
+        }
+    });
 }
+
+// Cambiar el idioma inicial a español
+window.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById("language-select").value = "es";
+    changeLanguage();
+});

@@ -1,265 +1,255 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/webpageMulti-Language.css">
-
-    <title>Optimizacion</title>
-  </head>
-  <body>
-    <!--Header-->
-
+    <title>Optimización</title>
+</head>
+<body>
+    <!-- Header -->
     <header class="header" id="header">
-      <nav class="nav container">
-        <a href="" class="navL">
-          <img src="img/favicon.png" alt="favicon" class="navL-img" />
-          Online
-        </a>
-        <div class="navM" id="nav-menu">
-          <ul class="navList">
-            <li class="navItem">
-              <a href="#home" class="navLink active-link"> Inicio </a>
-            </li>
-            <li class="navItem">
-                <a href="#product" class="navLink"> Descuento </a>
-              </li>
-            <li class="navItem">
-              <a href="#new" class="navLink"> Nuevos </a>
-            </li>
-            <li class="navItem">
-              <a href="#soporte" class="navLink"> Soporte </a>
-            </li>
-            <div>
-              <label for="language-select">Idioma: </label>
-              <select id="language-select">
-                  <option value="es">Español</option>
-                  <option value="en">Inglés</option>
-                  <option value="fr">Francés</option>
-              </select>
-          </div>
-          </ul>
-        <div class="navToggle" id="nav-toggle">
-          <i class="bx bx-grid-alt"></i>
-        </div>
-      </nav>
+        <nav class="nav container">
+            <a href="#" class="navL">
+                <img src="img/favicon.png" alt="favicon" class="navL-img">
+                Online
+            </a>
+            <div class="navM" id="nav-menu">
+                <ul class="navList">
+                    <li class="navItem">
+                        <a href="#home" class="navLink active-link" id="nav-home">Inicio</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#info" class="navLink" id="category-title">Informacion</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#product" class="navLink" id="nav-discount">Descuento</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#new" class="navLink" id="nav-new">Producto</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#footer-soporte" class="navLink" id="home-supporte">Soporte</a>
+                    </li>
+                    <li class="navItem">
+                        <label class="navLink" id="nav-language-label">Idioma</label>
+                        <select id="language-select" onchange="changeLanguage()">
+                            <option value="es">Español</option>
+                            <option value="en">Inglés</option>
+                            <option value="fr">Francés</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <div class="navToggle" id="nav-toggle">
+                <i class="bx bx-grid-alt"></i>
+            </div>
+        </nav>
     </header>
 
     <main class="main">
-      <!--HOME-->
-      <section class="home container" id="home">
-        <div class="swiper home-swiper">
-          <div class="swiper-wrapper">
-            <section>
-              <div class="homecont grid">
-                <div class="homedata">
-                  <h1 class="hometitle">Optimizacion <br />Super <br />Barato!!</h1>
-                  <p class="homedes">
-                    Buenas gracias por visitar la pagina abajo veras los diferentes precios de los optimizadores!
-                  </p>
-                  <div class="homebut">
-                    <a href="#new" class="button">Producto</a>
-                    <a href="#soporte" class="button">Soporte</a>
-                  </div>
+        <!-- Home Section -->
+        <section class="home container" id="home">
+            <div class="swiper home-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="homecont grid">
+                            <div class="homedata">
+                                <h1 class="hometitle" id="home-title">Optimización <br> Súper <br> Barato!!</h1>
+                                <p class="homedes" id="home-description">
+                                    Gracias por visitar la página. Abajo verás los diferentes precios de los optimizadores.
+                                </p>
+                                <div class="homebut">
+                                    <a href="#new" class="button" id="home-product">Producto</a>
+                                    <a href="#footer-soporte" class="button" id="home-support">Soporte</a>
+                                </div>
+                            </div>
+                            <div class="homegroup">
+                                <img src="img/home1-img.png" alt="Imagen principal" class="homeimg">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="homegroup">
-                  <img src="img/home1-img.png" alt="" class="homeimg" />
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-      </section>
-
-      <!--CATEGORY-->
-      <section class="section category">
-        <h2 class="sectiontitle">
-          Informacion <br />
-        </h2>
-
-        <div class="categorycontainer container grid">
-          <div class="categorydata">
-            <img src="img/categoria1.png" alt="" />
-            <h3 class="categorytitle">Exagerado</h3>
-            <p class="categorydescription">
-              Archivo que va a tener optimizacion de todo menos de la bios y wifi
-            </p>
-          </div>
-
-          <div class="categorydata">
-            <img src="img/categoria2.png" alt="" />
-            <h3 class="categorytitle">Normal</h3>
-            <p class="categorydescription">
-              Archivo que va a tener optimizacion de todo menos de la bios ping y programas
-            </p>
-          </div>
-
-          <div class="categorydata">
-            <img src="img/categoria3.png" alt="" />
-            <h3 class="categorytitle">Chetado</h3>
-            <p class="categorydescription">
-              Archivo que va a tener optimizacion de todo menos de la bios archivos y programas
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!--PRODUCTS-->
-      <section class="section product" id="product">
-        <h2 class="sectiontitle">Descuento</h2>
-
-        <section class="section discount">
-            <div class="discountcontainer container grid">
-              <div class="discountdata">
-                <h2 class="discounttitle">20% Descuento <br />Productos</h2>
-                <a href="#new" class="button">Vamos</a>
-              </div>
-              <img src="img/discount-img.png" alt="" class="discountimg" />
-        </div>
-      </section>
-
-      <!--LO NUEVO-->
-      <section class="section new" id="new">
-        <h2 class="sectiontitle">Producto</h2>
-
-        <div class="newcontainer container">
-          <div class="swiper new-swiper">
-            <div class="swiper-wrapper">
-              <div class="newcontent swiper-slide">
-                <div class="newtag">Nuevo</div>
-                <img src="img/productos4.png" alt="" class="newimg" />
-                <h3 class="newtitle">Locura</h3>
-                <span class="newsubtitle">Normal</span>
-                <div class="newprices">
-                  <span class="newprice">$10</span>
-                  <span class="newdiscount">$15</span>
-                  <button class="button newbutton">
-                    <a href="https://www.paypal.com/paypalme/cocolosu" target="_blank" class="bx bx-cart-alt newicon"></a>
-                  </button>
-                </div>
-              </div>
-              <div class="newcontent swiper-slide">
-                <div class="newtag">Nuevo</div>
-                <img src="img/productos2.png" alt="" class="newimg" />
-                <h3 class="newtitle">Locura</h3>
-                <span class="newsubtitle">Chetado</span>
-                <div class="newprices">
-                  <span class="newprice">$15</span>
-                  <span class="newdiscount">$20</span>
-                  <button class="button newbutton">
-                    <a href="https://www.paypal.com/paypalme/cocolosu" target="_blank" class="bx bx-cart-alt newicon"></a>
-                  </button>
-                </div>
-              </div>
-
-              <div class="newcontent swiper-slide">
-                <div class="newtag">Nuevo</div>
-                <img src="img/productos3.png" alt="" class="newimg" />
-                <h3 class="newtitle">Locura</h3>
-                <span class="newsubtitle">Exagerado</span>
-                <div class="newprices">
-                  <span class="newprice">$20</span>
-                  <span class="newdiscount">$25</span>
-                  <button class="button newbutton">
-                    <a href="https://www.paypal.com/paypalme/cocolosu" target="_blank" class="bx bx-cart-alt newicon"></a>
-                  </button>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-    <!--FOOTER-->
-    <section class="section new" id="soporte"></section>
-    <footer class="footer section">
-      <div class="footercontainer container grid">
-        <div class="footercontent">
-          <a href="" class="footerL">
-            <img src="img/favicon.png" alt="" class="footerL-img" />
-            Sorpresa
-          </a>
+        <!-- Category Section -->
+        <section class="section category"id="info">
+            <h2 class="sectiontitle" id="category-title">Información</h2>
+            <div class="categorycontainer container grid">
+                <div class="categorydata">
+                    <img src="img/categoria1.png" alt="Categoría Exagerado">
+                    <h3 class="categorytitle" id="category-exaggerated">Exagerado</h3>
+                    <p class="categorydescription" id="category-exaggerated-description">
+                        Optimización de todo menos de la BIOS y WiFi.
+                    </p>
+                </div>
+                <div class="categorydata">
+                    <img src="img/categoria2.png" alt="Categoría Normal">
+                    <h3 class="categorytitle" id="category-normal">Normal</h3>
+                    <p class="categorydescription" id="category-normal-description">
+                        Optimización de todo menos de la BIOS, ping y programas.
+                    </p>
+                </div>
+                <div class="categorydata">
+                    <img src="img/categoria3.png" alt="Categoría Chetado">
+                    <h3 class="categorytitle" id="category-cheated">Chetado</h3>
+                    <p class="categorydescription" id="category-cheated-description">
+                        Optimización de todo menos de la BIOS, archivos y programas.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-          <p class="footerdescription">
-            Si has llegado hasta aqui eres un crack y si compras un producto lo eres mas.
-          </p>
+        <!-- Products Section -->
+        <section class="section product" id="product">
+            <h2 class="sectiontitle" id="product-title">Descuento</h2>
+            <div class="discountcontainer container grid">
+                <div class="discountdata">
+                    <h2 class="discounttitle" id="discount-title">20% Descuento <br>Productos</h2>
+                    <a href="#new" class="button" id="discount-go">Vamos</a>
+                </div>
+                <img src="img/discount-img.png" alt="Imagen de descuento" class="discountimg">
+            </div>
+        </section>
 
-          <div class="footersocial">
-            <a href="https://www.youtube.com/@histopti" target="_blank" class="footersocial-link">
-              <i class="bx bxl-youtube"></i>
-            </a>
-            <a href="https://www.instagram.com/_daniicaroo_/" target="_blank" class="footersocial-link">
-              <i class="bx bxl-instagram-alt"></i>
-            </a>
-            <a href="https://www.tiktok.com/@ercaropichon" target="_blank" class="footersocial-link">
-              <i class="bx bxl-tiktok"></i>
-            </a>
-          </div>
-        </div>
+        <!-- New Products Section -->
+        <section class="section new" id="new">
+            <h2 class="sectiontitle" id="new-title">Producto</h2>
+            <div class="newcontainer container">
+                <div class="swiper new-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="newcontent swiper-slide">
+                            <div class="newtag" id="new-tag">Nuevo</div>
+                            <img src="img/productos4.png" alt="Producto normal" class="newimg">
+                            <h3 class="newtitle" id="new-title-normal">Locura</h3>
+                            <span class="newsubtitle" id="new-subtitle-normal">Normal</span>
+                            <div class="newprices">
+                                <span class="newprice">$10</span>
+                                <span class="newdiscount">$15</span>
+                                <button class="button newbutton">
+                                    <a href="https://www.paypal.com/paypalme/cocolosu" target="_blank" class="bx bx-cart-alt newicon"></a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="newcontent swiper-slide">
+                            <div class="newtag" id="new-tag">Nuevo</div>
+                            <img src="img/productos2.png" alt="Producto chetado" class="newimg">
+                            <h3 class="newtitle" id="new-title-cheated">Locura</h3>
+                            <span class="newsubtitle" id="new-subtitle-cheated">Chetado</span>
+                            <div class="newprices">
+                                <span class="newprice">$15</span>
+                                <span class="newdiscount">$20</span>
+                                <button class="button newbutton">
+                                    <a href="https://www.paypal.com/paypalme/cocolosu" target="_blank" class="bx bx-cart-alt newicon"></a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="newcontent swiper-slide">
+                            <div class="newtag" id="new-tag">Nuevo</div>
+                            <img src="img/productos3.png" alt="Producto exagerado" class="newimg">
+                            <h3 class="newtitle" id="new-title-exaggerated">Locura</h3>
+                            <span class="newsubtitle" id="new-subtitle-exaggerated">Exagerado</span>
+                            <div class="newprices">
+                                <span class="newprice">$20</span>
+                                <span class="newdiscount">$25</span>
+                                <button class="button newbutton">
+                                    <a href="https://www.paypal.com/paypalme/cocolosu" target="_blank" class="bx bx-cart-alt newicon"></a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="footercontent">
-          <h3 class="footertitle">Discord</h3>
-          <ul class="footerlinks">
-            <li>
-              <a href="https://www.infobae.com/new-resizer/RF0DJZxLa87Fg-QkSHCEg5DqYcs=/992x661/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/UPM7FDPLMNE3LP37C56CVQRY2Q.jpg" target="_blank" class="footerlink">Danielito#5051</a>
-            </li>
-            <li>
-              <a class="footerlink">Cuando me agreges mandame una foto de la compra y yo te dare el pack</a>
-            </li>
-            <li>
-              <a class="footerlink">Aparte me puedes preguntar dudas o mas info</a>
-            </li>
-          </ul>
-        </div>
+        <!-- Support Section -->
+        <section class="section support" id="support">
+            <h2 class="sectiontitle" id="nav-supporte">Soporte</h2>
+            <div class="supportcontainer container">
+                <form action="#" class="supportform">
+                    <div class="supportformgroup">
+        <footer class="footer section" id="footer-soporte">
+            <div class="footercontainer container grid">
+                <div class="footercontent">
+                    <a class="footerL" id="footer-surprise">Sorpresa</a>
+                    </a>
+                    <p class="footerdescription" id="footer-description">
+                        Si has llegado hasta aquí eres un crack, y si compras un producto lo eres más.
+                    </p>
+                    <div class="footersocial">
+                        <a href="https://www.youtube.com/@histopti" target="_blank" class="footersocial-link">
+                            <i class="bx bxl-youtube"></i>
+                        </a>
+                        <a href="https://www.instagram.com/_daniicaroo_/" target="_blank" class="footersocial-link">
+                            <i class="bx bxl-instagram-alt"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@ercaropichon" target="_blank" class="footersocial-link">
+                            <i class="bx bxl-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footercontent">
+                    <h3 class="footertitle" id="footer-discord-title">Discord</h3>
+                    <ul class="footerlinks">
+                        <li>
+                            <a href="https://www.infobae.com/new-resizer/RF0DJZxLa87Fg-QkSHCEg5DqYcs=/992x661/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/UPM7FDPLMNE3LP37C56CVQRY2Q.jpg" target="_blank" class="footerlink" id="footer-discord-link">Danielito#5051</a>
+                        </li>
+                        <li>
+                            <a class="footerlink" id="footer-discord-description1">Cuando me agregues, mándame una foto de la compra y te daré el pack.</a>
+                        </li>
+                        <li>
+                            <a class="footerlink" id="footer-discord-description2">Además, puedes preguntar dudas o más info.</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footercontent">
+                    <h3 class="footertitle" id="footer-about-title">Sobre nosotros</h3>
+                    <ul class="footerlinks">
+                        <li>
+                            <a class="footerlink" id="footer-about-youtuber">Youtuber</a>
+                        </li>
+                        <li>
+                            <a class="footerlink" id="footer-about-student">Estudiante</a>
+                        </li>
+                        <li>
+                            <a class="footerlink" id="footer-about-passion">Fascinado por la informática</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footercontent">
+                    <h3 class="footertitle" id="footer-payment-title">Métodos de pago</h3>
+                    <ul class="footerlinks">
+                        <li>
+                            <a class="footerlink" id="footer-payment-paypal">Paypal</a>
+                        </li>
+                        <li>
+                            <a class="footerlink">...</a>
+                        </li>
+                        <li>
+                            <a class="footerlink">...</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <span class="footercopy" id="footer-copy">Hecho por caro</span>
+        </footer>
 
-        <div class="footercontent">
-          <h3 class="footertitle">Sobre nosotros</h3>
-          <ul class="footerlinks">
-            <li>
-              <a class="footerlink">Youtuber</a>
-            </li>
-            <li>
-              <a class="footerlink">Estudiante</a>
-            </li>
-            <li>
-              <a class="footerlink">Fascinado por la informatica</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footercontent">
-          <h3 class="footertitle">Metodos de pago</h3>
-          <ul class="footerlinks">
-            <li>
-              <a class="footerlink">Paypal</a>
-            </li>
-            <li>
-              <a class="footerlink">...</a>
-            </li>
-            <li>
-              <a class="footerlink">...</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+        <!-- Scroll Up -->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="bx bx-up-arrow-alt scrollupicon"></i>
+        </a>
+    </main>
 
-      <span class="footercopy">Hecho por caro</span>
-    </footer>
-    <!--FOOTER-->
-    <a href="#" class="scrollup" id="scroll-up">
-      <i class="bx bx-up-arrow-alt scrollupicon"></i>
-    </a>
-
-    <!--JAVASCRIPT-->
-    <script src="js/scrollreveal.min.js"></script>
-
-    <script src="js/swiper-bundle.min.js"></script>
-
-    <script src="js/main.js"></script>
-  </body>
+    <!-- JavaScript -->
+    <script src="js/scrollreveal.min.js" defer></script>
+    <script src="js/swiper-bundle.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/translation.js" defer></script>
+</body>
 </html>
